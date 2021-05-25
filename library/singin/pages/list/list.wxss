@@ -1,0 +1,54 @@
+/* pages/signin/signin.wxss */
+
+.container-header {
+  background-color: #1296db;
+  color: #fff;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 10pt;
+}
+
+.default-btn {
+  width: 70px;
+  height:70px;
+  line-height: 70px;
+  font-size: 10pt;
+  border-radius: 50%;
+  background: #1296db;
+  color: #fff;
+}
+
+.coral {
+  background-color: pink;
+}
+
+.container-item {
+  margin: 10px;
+  padding: 10px;
+}
+
+.item-avatar {
+  float: left;
+  width: 30px;
+  height: 30px;
+}
+
+.item-nickname {
+  float: left;
+  margin-left: 5px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 10pt;
+  color: #2c2c2c;
+}
+
+.item-content {
+  font-size: 12pt;
+}
+
+.item-time {
+  font-size: 8pt;
+  color:gainsboro;
+}

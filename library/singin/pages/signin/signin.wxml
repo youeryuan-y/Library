@@ -1,0 +1,22 @@
+<!--pages/signin/signin.wxml-->
+<view class='container-signin'>
+  <form bindsubmit='onSubmit'>
+    <input name='content' placeholder='说点什么吧'></input>
+    <button class='default-btn' form-type='submit'>提交</button>
+  </form>
+  <form bindsubmit='stop'>
+    <view>
+    <label class='open'>{{hours}}:{{minute}}:{{second}}</label>  
+    <button class='default-btn1' form-type='submit'>暂停</button>
+    </view>
+  </form>
+  <form bindsubmit='continue'>
+    <view>
+    <button class='default-btn2' form-type='submit'>继续</button>
+    </view>
+  </form>
+ 
+    
+    <!-- <text class='marright'></text> -->
+  
+</view>

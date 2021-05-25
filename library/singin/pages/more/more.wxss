@@ -1,0 +1,69 @@
+/* pages/more/more.wxss */
+
+.container-search {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+.form-search {
+  display: inline-block;
+  height: 30px;
+  width:100%;
+}
+
+.input-search {
+  display: block;
+  float: right;
+  width:90%;
+  height:30px;
+  background: white;
+  border: 1px solid #d8d8d8;
+  overflow: hidden;
+  box-sizing: border-box; /*修改多出来的边框*/
+}
+
+.button-search {
+  display: block;
+  width: 30px;
+  height: 30px;
+  float: right;
+  line-height: 30px;
+  background-color: #1adae8;
+  color: white;
+  border-radius: 0;
+}
+
+.container-list {
+  margin-top: 30px;
+}
+
+.container-item {
+  padding: 15px;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.item-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  float: left;
+}
+
+.text-name {
+  display: block;
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  font-size: 10pt;
+  margin-left: 5px;
+}
+
+.arrow-right {
+  display: block;
+  float: right;
+  margin-right: 10px;
+  height: 30px;
+  line-height: 30px;
+  font-size:10pt;
+}

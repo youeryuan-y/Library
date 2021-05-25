@@ -1,0 +1,32 @@
+<!--index.wxml-->
+
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="1.png" mode="cover"></image>
+      <text class="userinfo-nickname">打卡1号</text>
+    </block>
+  </view>
+  
+  <view class='line'></view>
+
+  <view class="list-container">
+    <view class='signin-label'>参加的打卡</view>
+
+    <view wx:for="{{SignInList}}" wx:key="id">
+      <view class='item-container' bindtap='onClickItem' data-id='{{item.id}}'>
+        <image class="item-avatar" src="daqia.png" mode="cover"></image>
+        <view class='item-name'>{{item.name}}</view>
+        <view class='clear-fix'></view>
+      </view>
+    </view>
+  </view>
+
+  <view class='float-container'>
+    <view class='float-inner'>
+      <button class='default-btn' id='btn_more' bindtap='onClickMore'>+</button>
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,33 @@
+<!--pages/more/more.wxml-->
+<view class='container-more'>
+  <view class='container-search'>
+    <form class='form-search' bindsubmit='onSubmitSearch' >
+      <button class="button-search" form-type='submit' >{{'>'}}</button>
+      <input class='input-search' name='team'></input>
+    </form>
+  </view>
+
+  <view class='clear-fix'></view>
+
+  <!-- 搜索结果列表 -->
+  <view class='container-list'>
+    <!-- 新建小组 -->
+    <view bindtap='onClickNew' class='container-item'>
+      <text class='text-name'>新建小组</text>
+      <text class='arrow-right'>{{'>'}}</text>
+      <view class='clear-fix'></view>
+    </view>
+
+    <!-- 搜索得到的小组 -->
+    <block wx:for='{{ResultList}}' wx:key='id'>
+      <view bindtap='onClickItem' data-id='{{item.id}}' class='container-item'>
+        <image class='item-avatar' src='daqia.png' mode='cover'></image>
+        <text class='text-name'>{{item.team}}</text>
+        <text class='arrow-right'>{{'>'}}</text>
+        <view class='clear-fix'></view>
+      </view>
+    </block>
+
+  </view>
+
+</view>

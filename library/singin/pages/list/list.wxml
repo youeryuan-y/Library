@@ -1,0 +1,28 @@
+<!--pages/signin/signin.wxml-->
+<view class='container-signin'>
+  <view class='container-header'>
+    <block wx:if="{{signed == true}}">
+      <text>今日已打卡</text>
+    </block>
+    <block wx:else>
+      <button class='default-btn coral' bindtap='onClickSignin'>打卡</button>
+    </block>
+  </view>
+
+  <!-- 打卡列表 -->
+  <view class='container-list'>
+    <block wx:for='{{SigninList}}' wx:key="date">
+      <view class='container-item'>
+        <view class='item-title'>
+          <image class='item-avatar' src='smile.png' mode='cover'></image>
+          <text class='item-nickname'>{{item.nickName}}</text>
+          <view class='clear-fix'></view>
+        </view>
+        <text class='item-content'>{{item.content}}</text>
+        <view class='line'></view>
+        <text class='item-time'>{{item.date}}</text>
+      </view>
+    </block>
+  </view>
+
+</view>

@@ -1,0 +1,30 @@
+<!--pages/add/add.wxml-->
+<view class='container-add'>
+  <form class='form-add' bindsubmit='onSubmitAdd'>
+    <view class='container-item'>
+      <text class='item-label'>组长</text>
+      <text class='item-input' id='item-team-master'>{{userInfo.nickName}}</text>
+      <view class='clear-fix'></view>
+    </view>
+    <!-- 小组名 -->
+    <view class='container-item'>
+      <text class='item-label'>小组名</text>
+      <input class='item-input' name='team' placeholder='请输入组名'></input>
+      <view class='clear-fix'></view>
+    </view>
+
+
+    <!-- 打卡时间 -->
+    <view class='container-item'>
+      <text class='item-label'>打卡时间</text>
+      <view class='time-container'>
+        <input class='input-time'name='start_time' value='08:00'></input>
+        <input class='input-time' name='end_time' value='20:00'></input>
+      </view>
+      <view class='clear-fix'></view>
+    </view>
+
+    <button class='default-btn' form-type='submit'>新建小组</button>
+    
+  </form>
+</view>

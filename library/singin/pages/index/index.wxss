@@ -1,0 +1,88 @@
+/**index.wxss**/
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20rpx;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.list-container {
+  width: 100%;
+  background-color: #aaa;
+  padding-bottom: 2px;
+}
+
+.signin-label {
+  padding: 10px;
+  text-align: left;
+  font-size: 15pt;
+  color:dimgray;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: rgb(255, 255, 255);
+}
+
+.item-container {
+  width:100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top:10px;
+  padding-bottom: 10px;
+  margin-top: 2px;
+  background-color: #fff;
+}
+
+.item-avatar {
+  width:30px;
+  height:30px;
+  border-radius: 50%;
+  float: left;
+}
+
+.item-name {
+  height: 30px;
+  line-height: 30px;
+  font-size: 10pt;
+  margin-left: 5px;
+  float: left;
+}
+
+.float-container {
+  position: fixed;
+  right: 50rpx;
+  bottom: 50rpx;
+  z-index: 1000;
+}
+
+.float-inner {
+  width: 160px;
+  height:160px;
+  position: relative;
+}
+
+.default-btn {
+  background-color: #1296db;
+  color: white;
+  border-radius: 50%;
+}
+
+#btn_more {
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  font-size: 20pt;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
